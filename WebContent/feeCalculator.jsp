@@ -6,9 +6,14 @@
 <title>飲み会の割り勘計算プログラム</title>
 </head>
 <body>
-<h1>総計9万円、１１人の飲み会での１人当たりの料金を計算します</h1><br>
-<% int sum = 90000; %>
-<% int n = 11; %>
+<h1>計算結果を表示します</h1><br>
+<%
+	request.setCharacterEncoding("SHIFT_JIS");
+	String[] sumStr = request.getParameterValues("sum");
+	int sum = Integer.parseInt(sumStr[0]);
+	String[] nStr = request.getParameterValues("n");
+	int n = Integer.parseInt(nStr[0]);
+%>
 <%=sum %>円を<%=n %>で割ると<%=sum/n %>円です。
 </body>
 </html>
