@@ -5,10 +5,15 @@
 <title>飲み会の割り勘計算プログラム</title>
 </head>
 <body>
-<h1>会計金額と参加人数を入力してください</h1><br>
+<h1>会計金額と役職別参加人数および計差率を入力してください</h1><br>
 <form action="feeCalculator.jsp" method="post">
 会計金額：<input type="text" name="sum"><br>
-参加人数：<input type="text" name="n"><br>
+参加者役職別詳細（人数、傾斜率）<br>
+センタ長：<input type="text" name="number_director">人、<input type="text" name="rate_director">％<br>
+課長：<input type="text" name="number_manager">人、<input type="text" name="rate_manager">％<br>
+SX：<input type="text" name="number_sx">人、<input type="text" name="rate_sx">％<br>
+社員：<input type="text" name="number_hira">人、<input type="text" name="rate_hira">％<br>
+BP：<input type="text" name="number_bp">人、<input type="text" name="rate_bp">％<br>
 <input type="submit" value="結果を確認する"><br>
 </form>
 </body>
